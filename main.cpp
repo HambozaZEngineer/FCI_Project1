@@ -3,6 +3,8 @@
 #include <filesystem>
 #include <fstream>
 #include <vector>
+#include <windows.h>
+#include <shellapi.h>
 using namespace std;
 
 /* ------------------------ Global Variables -------------------------- */
@@ -87,5 +89,8 @@ int main()
     /* ------------------------ Iterate over the folder and check files extensions _Finished_ -------------------------- */
 
 
+    /* ------------------------ Success Message -------------------------- */
     cout << "Success..." << endl;
-};
+    ShellExecuteA(NULL, "explore", path.c_str(), NULL, NULL, SW_SHOWMINIMIZED); /* Show Folder In Explorer */
+     /* ------------------------ Success Message _Finished -------------------------- */
+}
