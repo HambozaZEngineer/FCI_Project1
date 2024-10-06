@@ -91,6 +91,6 @@ int main()
 
     /* ------------------------ Success Message -------------------------- */
     cout << "Success..." << endl;
-    ShellExecuteA(NULL, "explore", path.c_str(), NULL, NULL, SW_SHOWMINIMIZED); /* Show Folder In Explorer */
+    ShellExecuteA(NULL, "open", path.c_str(), NULL, NULL, SW_SHOWMINIMIZED); /* Show Folder In Explorer */
      /* ------------------------ Success Message _Finished -------------------------- */
 }
