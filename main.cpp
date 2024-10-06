@@ -85,4 +85,7 @@ int main()
         }
     }
     /* ------------------------ Iterate over the folder and check files extensions _Finished_ -------------------------- */
+
+
+    cout << "Success..." << endl;
 };
